@@ -1,5 +1,5 @@
 
-    const apiKey = "707d8ccc53b34c35b0a165738250809"; 
+const apiKey = "707d8ccc53b34c35b0a165738250809";
     let forecastData = [];
 
     // Search button (by city name)
@@ -14,7 +14,7 @@
 
     // Get Weather by city name
     async function getWeather(city = "India") {
-      const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=no&alerts=no`;
+      const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=yes`;
       fetchWeather(url);
     }
 
